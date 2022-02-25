@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "01a9c552-fd8e-4417-b547-b37e7493df05",
+		"name": "1337-test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Coworkers list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/coworkers?start=10&end=12&filter=ahm",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"coworkers"
+					],
+					"query": [
+						{
+							"key": "start",
+							"value": "10"
+						},
+						{
+							"key": "end",
+							"value": "12"
+						},
+						{
+							"key": "filter",
+							"value": "ahm"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get coworker by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/coworker/:id",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"coworker",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update coworker by id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":1,\n    \"name\": \"firstname lastname\",\n    \"city\": \"city name\",\n    \"text\": \"<p>This is new text</p>\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/api/coworker",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"coworker"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "localhost:3000"
+		}
+	]
+}
