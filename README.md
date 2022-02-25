@@ -25,7 +25,7 @@ That included two parts:
  - Jest and SuperTest (Testing)
 ##### Usefull links
  - [Hosted demo](1337.hossein.link)
- - [Postman api documentation](postmanLink)
+ - [Postman api documentation](https://github.com/HosseinDotLink/1337-test/blob/main/1337-test.postman_collection.json)
 
 ## Installation and Running
 
@@ -61,7 +61,7 @@ If you want to run tests, run the `npm test` command after installation.
 
 ## Using
 
-> Note 2: Before starting this section, You can install [postman](https://www.postman.com/) and use [this](postmanLink) postman document to skip this part.
+> Note 2: Before starting this section, You can install [postman](https://www.postman.com/) and use [this](https://github.com/HosseinDotLink/1337-test/blob/main/1337-test.postman_collection.json) postman document to skip this part.
 
 > Note 3: You can replace `https://1337.hossein.link` with `http[s]://YOUR_LINK`.
 
