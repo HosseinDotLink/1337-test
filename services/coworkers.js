@@ -15,7 +15,7 @@ const list = async ({
             });
         }
         const totalLength = data.length;
-        if (start && end && !filter) {
+        if (start && end) {
             data = data.slice(start, end);
         }
         return {
